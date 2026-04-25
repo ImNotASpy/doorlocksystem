@@ -1,0 +1,362 @@
+/* ============================================================
+   SECURITY CONTROL CENTER — Industrial Dark Theme
+   Graphite / Steel Gray / Amber / Muted Blue / Status Green+Red
+   ============================================================ */
+
+.root {
+    -fx-background-color: #1e1e24;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* ── Top bar ── */
+.top-bar {
+    -fx-background-color: #111116;
+    -fx-padding: 14px;
+    -fx-border-color: #d4870a;
+    -fx-border-width: 0 0 2 0;
+}
+
+.title-label {
+    -fx-text-fill: #f0a500;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* ── Left panel ── */
+.left-panel {
+    -fx-background-color: #25252d;
+    -fx-padding: 15px;
+    -fx-min-width: 145px;
+    -fx-border-color: #3a3a46;
+    -fx-border-width: 0 1 0 0;
+}
+
+.mode-label {
+    -fx-text-fill: #f0a500;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 8 0;
+}
+
+/* ── Mode buttons (default steel-gray) ── */
+.mode-button {
+    -fx-background-color: #3c3c48;
+    -fx-text-fill: #c8ccd4;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 12px;
+    -fx-cursor: hand;
+    -fx-border-color: #52525e;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.mode-button:hover {
+    -fx-background-color: #4a6fa5;
+    -fx-text-fill: #e8eaec;
+    -fx-border-color: #6a8fc5;
+}
+
+/* ── Fire alarm — stays red, it's a status ── */
+.fire-button {
+    -fx-background-color: #5c1a1a;
+    -fx-text-fill: #ff6b6b;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 12px;
+    -fx-cursor: hand;
+    -fx-border-color: #8b2020;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.fire-button:hover {
+    -fx-background-color: #7a2020;
+    -fx-text-fill: #ffaaaa;
+}
+
+/* ── Maintenance — amber accent ── */
+.maintenance-button {
+    -fx-background-color: #3a2b0a;
+    -fx-text-fill: #f0a500;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 12px;
+    -fx-cursor: hand;
+    -fx-border-color: #7a5510;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.maintenance-button:hover {
+    -fx-background-color: #5a3f10;
+    -fx-text-fill: #ffc040;
+}
+
+/* ── Reset ── */
+.reset-button {
+    -fx-background-color: #2e2e38;
+    -fx-text-fill: #9ea3ac;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 12px;
+    -fx-cursor: hand;
+    -fx-border-color: #4a4a56;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.reset-button:hover {
+    -fx-background-color: #3e3e4e;
+    -fx-text-fill: #c8ccd4;
+}
+
+/* ── ComboBox ── */
+.combo-box {
+    -fx-background-color: #2e2e38;
+    -fx-border-color: #4a4a56;
+    -fx-border-width: 1px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #c8ccd4;
+}
+
+.combo-box:hover {
+    -fx-border-color: #4a6fa5;
+}
+
+/* button cell — the ListCell showing the selected value */
+.combo-box .list-cell {
+    -fx-background-color: #2e2e38;
+    -fx-text-fill: #c8ccd4;
+    -fx-padding: 2px 6px;
+}
+
+/* ── Main content panel ── */
+.main-panel {
+    -fx-background-color: #1e1e24;
+    -fx-padding: 15px;
+}
+
+/* ── Door table header ── */
+.door-header {
+    -fx-background-color: #111116;
+    -fx-padding: 6px 10px;
+    -fx-border-color: #d4870a;
+    -fx-border-width: 0 0 1 0;
+}
+
+.header-cell {
+    -fx-text-fill: #f0a500;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+/* ── Door rows ── */
+.door-row {
+    -fx-background-color: #25252d;
+    -fx-border-color: #35353f;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 6px 10px;
+}
+
+.door-row:hover {
+    -fx-background-color: #2d2d3a;
+}
+
+.row-cell {
+    -fx-font-size: 13px;
+    -fx-text-fill: #c8ccd4;
+}
+
+/* ── Status badges — green/red only ── */
+.safe-result {
+    -fx-background-color: #1a4d2e;
+    -fx-text-fill: #4cde80;
+    -fx-font-weight: bold;
+    -fx-padding: 3px 10px;
+    -fx-background-radius: 3px;
+    -fx-border-color: #2e7d52;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.issue-result {
+    -fx-background-color: #4d1a1a;
+    -fx-text-fill: #ff6b6b;
+    -fx-font-weight: bold;
+    -fx-padding: 3px 10px;
+    -fx-background-radius: 3px;
+    -fx-border-color: #8b2020;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.pending-result {
+    -fx-background-color: #2e2e38;
+    -fx-text-fill: #7a7a88;
+    -fx-padding: 3px 10px;
+    -fx-background-radius: 3px;
+    -fx-border-color: #3a3a46;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+/* ── Event log ── */
+.log-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-text-fill: #f0a500;
+    -fx-padding: 8px 0 2px 0;
+}
+
+.event-log {
+    -fx-font-family: "Courier New", monospace;
+    -fx-font-size: 12px;
+    -fx-background-color: #111116;
+    -fx-border-color: #3a3a46;
+    -fx-border-width: 1px;
+    -fx-text-fill: #8ab4c8;
+}
+
+/* ── Bottom bar ── */
+.bottom-bar {
+    -fx-background-color: #111116;
+    -fx-padding: 10px;
+    -fx-border-color: #3a3a46;
+    -fx-border-width: 1 0 0 0;
+}
+
+.status-label {
+    -fx-text-fill: #7a8a9a;
+    -fx-font-size: 13px;
+}
+
+/* ── Add mode button — muted blue ── */
+.add-mode-button {
+    -fx-background-color: #1e3a5a;
+    -fx-text-fill: #8ab4c8;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 12px;
+    -fx-cursor: hand;
+    -fx-border-color: #2e5a7a;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.add-mode-button:hover {
+    -fx-background-color: #2a4e72;
+    -fx-text-fill: #aad4e8;
+}
+
+/* ── Delete mode button ── */
+.delete-mode-button {
+    -fx-background-color: #3a1a1a;
+    -fx-text-fill: #cc4444;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 4px 7px;
+    -fx-cursor: hand;
+    -fx-min-width: 26px;
+    -fx-background-radius: 3px;
+    -fx-border-color: #661a1a;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.delete-mode-button:hover {
+    -fx-background-color: #5a2020;
+    -fx-text-fill: #ff7070;
+}
+
+/* ── Separator ── */
+.left-panel .separator .line {
+    -fx-border-color: #3a3a46;
+}
+
+/* ── ComboBox text & arrow ── */
+.combo-box .label {
+    -fx-text-fill: #c8ccd4;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #3c3c48;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #c8ccd4;
+}
+
+/* ── ComboBox dropdown popup ── */
+.combo-box-popup .list-view {
+    -fx-background-color: #2e2e38;
+    -fx-border-color: #4a4a56;
+    -fx-border-width: 1px;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: #2e2e38;
+    -fx-text-fill: #c8ccd4;
+    -fx-padding: 4px 8px;
+}
+
+.combo-box-popup .list-cell:hover,
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #4a6fa5;
+    -fx-text-fill: #e8eaec;
+}
+
+.combo-box-popup .list-cell:selected,
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #3a5a8a;
+    -fx-text-fill: white;
+}
+
+/* ── TextArea (event log) inner text ── */
+.text-area {
+    -fx-control-inner-background: #111116;
+    -fx-text-fill: #8ab4c8;
+    -fx-highlight-fill: #4a6fa5;
+}
+
+.text-area .content {
+    -fx-background-color: #111116;
+}
+
+/* ── Add Mode dialog ── */
+.dialog-grid {
+    -fx-background-color: #1e1e24;
+    -fx-padding: 20px;
+}
+
+.dialog-label {
+    -fx-text-fill: #c8ccd4;
+    -fx-font-size: 13px;
+}
+
+.dialog-label-bold {
+    -fx-text-fill: #f0a500;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.dialog-field {
+    -fx-background-color: #2e2e38;
+    -fx-text-fill: #c8ccd4;
+    -fx-border-color: #4a4a56;
+    -fx-border-width: 1px;
+    -fx-prompt-text-fill: #5a5a6a;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+}
+
+.dialog-field:focused {
+    -fx-border-color: #4a6fa5;
+}
+
+.dialog-error {
+    -fx-text-fill: #ff6b6b;
+    -fx-font-size: 12px;
+}
