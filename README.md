@@ -14,7 +14,7 @@ A JavaFX desktop app that simulates monitoring the lock status of multiple doors
 
 ## How to Run
 
-Open a terminal in the `final/` folder, then run:
+Open a terminal in the project root folder, then run:
 
 ```
 mvn javafx:run
