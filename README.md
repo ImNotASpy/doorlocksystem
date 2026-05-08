@@ -91,3 +91,4 @@ final/
 
 - The app does not connect to real hardware - **Current Status** must be updated manually (or extended to read from a hardware API)
 - Custom modes added during a session are not saved to disk; they reset when the app is closed
+- Presentation: https://youtu.be/wqIVywPfafs
